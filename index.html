@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Montserrat:wght@400;700&display=swap" 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      rel="stylesheet">
+  </head>
+  <body>
+      <h1>MEMORY GAME!</h1>
+      <span id="counter-score">Counter: 0</span>
+      <div id="game"></div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="score-message" class="end-message">Congratulations! <br>You've completed the <br> game with a <br> score of : <span id="final-score"></span></span>
+          <button id="restart-button" onclick="showConfirmationDialog()">Restart</button>
+        </div>
+      </div>
+      <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+          <p>Do you want to reset the score?</p>
+          <button id="reset-button" class="score-button" onclick="resetScore()">Reset Score</button>
+          <button id="keep-button" class="score-button" onclick="keepScore()">Keep Score</button>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
